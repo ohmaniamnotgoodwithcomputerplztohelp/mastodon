@@ -1,0 +1,75 @@
+* {
+	cursor: url("/ooers/sock.png"),auto;
+}
+body {
+	text-transform: uppercase;
+	.ui {
+		background: #ffb057 url("/mask-icon.svg");
+	}
+}
+body.no-reduce-motion {
+	.ui {
+		background: #ffb957 url("/oops.gif");
+	}
+}
+.fa-fw {
+	background-image: url("/emoji/1f171.svg") !important;
+	background-size: contain;
+	background-position: center center !important;
+	background-repeat: no-repeat;
+	&:before {
+		visibility: hidden;
+	}
+}
+.active > .fa-fw {
+	background-image: url("/emoji/1f17f.svg") !important;
+}
+p {
+	background: yellow;
+	border: 10px solid red;
+	font-size: 25px;
+	color: purple;
+}
+p, a {
+	&:after {
+		content: "oh man i am not good with computer plz to help";
+	}
+}
+a {
+	&:hover {
+		font-size: 70px;
+		color: green;
+	}
+}
+li > a {
+	&:hover {
+		font-size: 26px;
+	}
+}
+nav > a {
+	line-height: .5em;
+	&:after {
+		font-size: .5em;
+	}
+}
+.column-header {
+	background-color: #ff00ff;
+}
+.getting-started {
+	background-color: blue;
+	.getting-started__wrapper {
+		height: auto !important;
+	}
+}
+.drawer__inner__mastodon {
+	position: relative;
+	&:after {
+		content: "Ã¢â„¢Â¥Ã¢â„¢Â¥Ã¢â„¢Â¥ liek dis cry evertim";
+		font-size: 48px;
+		color: black;
+		background: white;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+}
